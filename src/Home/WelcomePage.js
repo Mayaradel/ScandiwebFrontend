@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , useCallback } from "react";
 import "./list.css";
 import HomeNav from "./HomeNav";
 
@@ -15,7 +15,7 @@ const WelcomePage = () => {
     });
   };
 
-  const handleResponse = (response) => {
+  const handleResponse = useCallback(async (response) => {
     console.log("Response Status:", response.status);
     console.log("Response Headers:", response.headers);
     return parseJSON(response);
