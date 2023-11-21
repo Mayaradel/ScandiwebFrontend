@@ -1,0 +1,58 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-right: 700px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+input,
+select {
+  margin-top: 15px;
+  width: 300px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+
+  margin-top: 10px;
+
+}
+
+/* button:hover {
+  background-color: #008cba;
+}
+*/ */
+
+  /* .button {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+   */
+  
+  p {
+  margin: 0;
+}
+/* style.css */
