@@ -45,10 +45,8 @@ const WelcomePage = () => {
   const handleCheckboxChange = (productId) => {
     setSelectedProducts((prevSelected) => {
       if (prevSelected.includes(productId)) {
-        // If the product ID is already in the array, remove it
         return prevSelected.filter((id) => id !== productId);
       } else {
-        // If the product ID is not in the array, add it
         return [...prevSelected, productId];
       }
     });
@@ -98,16 +96,7 @@ const WelcomePage = () => {
         selectedProducts={selectedProducts}
         handleMassDelete={handleMassDelete}
       />
-      {/* 
-      <button
-        type="button"
-        className="btn btn-primary btn-sm"
-        onClick={handleMassDelete}
-        disabled={selectedProducts.length === 0}
-      >
-        MASS DELETE
-      </button> */}
-
+      
       <div className="product-list">
         {products.length > 0 ? (
           products.map((product) => (

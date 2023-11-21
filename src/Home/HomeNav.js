@@ -3,8 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function HomeNav({ handleMassDelete, selectedProducts }) {
-  console.log("Deleting products...", selectedProducts);
-
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">

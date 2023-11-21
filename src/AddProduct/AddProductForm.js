@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-// import Button from 'react-bootstrap/Button';
+
 const AddProductForm = () => {
   const [formData, setFormData] = useState({
     sku: "",
@@ -35,8 +35,6 @@ const AddProductForm = () => {
 
     if (skuExists) {
       console.error("Error: SKU already exists");
-     // setAlreadyExists("Product Already exists");
-
       setAlreadyExists("Product Already exists");
       setTimeout(() => {
         setAlreadyExists(null);
@@ -52,7 +50,6 @@ const AddProductForm = () => {
         length: "",
         width: "",
       });
-      // You can set an error state and display a message to the user
       return;
     }
 
@@ -69,7 +66,7 @@ const AddProductForm = () => {
       setFillDataPlease("Please fill in all required fields");
       setTimeout(() => {
         setFillDataPlease(null);
-      }, 3000); // Hide the error message after 3 seconds
+      }, 3000);
       return;
     }
 
@@ -84,7 +81,6 @@ const AddProductForm = () => {
         break;
       case "Furniture":
         additionalInfo = `${formData.height}cmx${formData.width}cmx${formData.length}cm`;
-        //   additionalInfo.compactDimensions = `${formData.height}x${formData.width}x${formData.length}`;
         break;
       default:
         break;

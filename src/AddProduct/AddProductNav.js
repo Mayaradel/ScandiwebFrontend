@@ -9,12 +9,6 @@ function AddProductNav() {
             Add Product
           </Link>
           <form className="d-flex">
-            {/* <Link className="navbar-brand" to="/AddProductPage">
-              <button type="button" className="btn btn-primary btn-sm">
-                Save
-              </button>
-            </Link> */}
-
             <div className="d-flex"></div>
             <Link className="navbar-brand" to="/Home">
               <button type="button" className="btn btn-primary btn-sm">
