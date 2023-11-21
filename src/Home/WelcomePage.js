@@ -38,9 +38,10 @@ const WelcomePage = () => {
         console.error("Error fetching products:", error);
       }
     };
-
+  
     fetchData();
-  }, []);
+  }, [handleResponse]); 
+  
 
   const handleCheckboxChange = (productId) => {
     setSelectedProducts((prevSelected) => {
@@ -96,7 +97,7 @@ const WelcomePage = () => {
         selectedProducts={selectedProducts}
         handleMassDelete={handleMassDelete}
       />
-      
+
       <div className="product-list">
         {products.length > 0 ? (
           products.map((product) => (
