@@ -1,7 +1,6 @@
-import React, { useEffect, useState , useCallback } from "react";
+import {React, useEffect, useState ,useCallback } from "react";
 import "./list.css";
 import HomeNav from "./HomeNav";
-
 const WelcomePage = () => {
   const [products, setProducts] = useState([]);
   const [selectedProducts, setSelectedProducts] = useState([]);
@@ -19,7 +18,7 @@ const WelcomePage = () => {
     console.log("Response Status:", response.status);
     console.log("Response Headers:", response.headers);
     return parseJSON(response);
-  };
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -38,10 +37,9 @@ const WelcomePage = () => {
         console.error("Error fetching products:", error);
       }
     };
-  
+
     fetchData();
-  }, [handleResponse]); 
-  
+  }, [handleResponse]);
 
   const handleCheckboxChange = (productId) => {
     setSelectedProducts((prevSelected) => {
@@ -56,7 +54,6 @@ const WelcomePage = () => {
   const handleMassDelete = () => {
     if (selectedProducts.length === 0) {
       console.error("No products selected for deletion");
-
       return;
     }
     console.log("Selected Products hereeeeee:", selectedProducts);
@@ -90,7 +87,6 @@ const WelcomePage = () => {
       })
       .catch((error) => console.error("Fetch error:", error));
   };
-
   return (
     <div>
       <HomeNav
