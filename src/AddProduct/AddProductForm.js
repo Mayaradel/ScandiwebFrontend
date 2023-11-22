@@ -101,9 +101,9 @@ const AddProductForm = () => {
         "https://sandiwebbackend.000webhostapp.com/data/Add.php",
         {
           method: "POST",
-          // headers: {
-          //   "Content-Type": "application/json",
-          // },
+          headers: {
+            "Content-Type": "application/json",
+          },
           body: JSON.stringify(product),
         }
       );
@@ -132,7 +132,7 @@ const AddProductForm = () => {
       }
     } catch (error) {
       console.error("Error:", error.message);
-    }  
+    }
   };
   const fetchExistingProducts = async () => {
     try {
