@@ -98,7 +98,7 @@ const AddProductForm = () => {
 
     try {
       const response = await fetch(
-        "https://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/Add.php",
+        "https://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/main.php",
         {
           method: "POST",
           headers: {
