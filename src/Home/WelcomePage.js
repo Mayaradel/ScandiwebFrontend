@@ -61,9 +61,9 @@ const WelcomePage = () => {
     console.log(JSON.stringify({ selectedProducts }));
     fetch("https://sandiwebbackend.000webhostapp.com/data/deleteProduct.php", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      // headers: {
+      //   "Content-Type": "application/json",
+      // },
       body: JSON.stringify({ selectedProducts }),
     })
       .then((response) => response.json())
