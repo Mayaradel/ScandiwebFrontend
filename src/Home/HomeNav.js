@@ -3,15 +3,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function HomeNav({ handleMassDelete, selectedProducts }) {
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/https://scintillating-belekoy-c410ee.netlify.app/">
+        <Link className="navbar-brand" to="/Home">
           Home
         </Link>
 
         <form className="d-flex">
-          <Link className="navbar-brand" to="/https://neon-smakager-71424f.netlify.app/AddProductPage">
+          <Link className="navbar-brand" to="/AddProductPage">
             <button type="button" className="btn btn-primary btn-sm">
               Add
             </button>
