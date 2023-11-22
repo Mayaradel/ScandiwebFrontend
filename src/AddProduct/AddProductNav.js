@@ -10,7 +10,7 @@ function AddProductNav() {
           </Link>
           <form className="d-flex">
             <div className="d-flex"></div>
-            <Link className="navbar-brand" to="https://neon-smakager-71424f.netlify.app/Home">
+            <Link className="navbar-brand" to="/https://scintillating-belekoy-c410ee.netlify.app/">
               <button type="button" className="btn btn-primary btn-sm">
                 Cancel
               </button>
