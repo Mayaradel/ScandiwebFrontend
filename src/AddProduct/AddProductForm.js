@@ -98,7 +98,7 @@ const AddProductForm = () => {
 
     try {
       const response = await fetch(
-        "https://sandiwebbackend.000webhostapp.com/data/main.php",
+        "https://sandiwebbackend.000webhostapp.com/data/Add.php",
         {
           method: "POST",
           headers: {
