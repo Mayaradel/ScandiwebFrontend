@@ -98,7 +98,7 @@ const AddProductForm = () => {
 
     try {
       const response = await fetch(
-        "http://localhost/ecommerceWebsite/backend/main.php",
+        "https://sandiwebbackend.000webhostapp.com/data/main.php",
         {
           method: "POST",
           headers: {
@@ -137,7 +137,7 @@ const AddProductForm = () => {
   const fetchExistingProducts = async () => {
     try {
       const response = await fetch(
-        "http://localhost/ecommerceWebsite/backend/getData.php"
+        "https://sandiwebbackend.000webhostapp.com/data/getData.php"
       );
       if (response.ok) {
         const products = await response.json();

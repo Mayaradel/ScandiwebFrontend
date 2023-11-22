@@ -25,7 +25,7 @@ const WelcomePage = () => {
       try {
         console.log("Fetching products...");
         const response = await fetch(
-          "http://localhost/ecommerceWebsite/backend/getData.php",
+          "https://sandiwebbackend.000webhostapp.com/data/getData.php",
           {
             mode: "cors",
           }
@@ -59,7 +59,7 @@ const WelcomePage = () => {
     console.log("Selected Products hereeeeee:", selectedProducts);
 
     console.log(JSON.stringify({ selectedProducts }));
-    fetch("http://localhost/ecommerceWebsite/backend/deleteProduct.php", {
+    fetch("https://sandiwebbackend.000webhostapp.com/data/deleteProduct.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const WelcomePage = () => {
           console.log("Mass Delete Response:", data);
 
           // Fetch updated product data after deletion
-          fetch("http://localhost/ecommerceWebsite/backend/getData.php", {
+          fetch("https://sandiwebbackend.000webhostapp.com/data/getData.php", {
             mode: "cors",
           })
             .then(handleResponse)
