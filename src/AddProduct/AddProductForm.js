@@ -98,7 +98,7 @@ const AddProductForm = () => {
 
     try {
       const response = await fetch(
-        "https://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/main.php",
+        "http://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/main.php",
         {
           method: "POST",
           headers: {
@@ -137,7 +137,7 @@ const AddProductForm = () => {
   const fetchExistingProducts = async () => {
     try {
       const response = await fetch(
-        "https://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/getData.php"
+        "http://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/getData.php"
       );
       if (response.ok) {
         const products = await response.json();
