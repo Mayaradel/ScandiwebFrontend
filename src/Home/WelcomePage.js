@@ -25,7 +25,7 @@ const WelcomePage = () => {
       try {
         console.log("Fetching products...");
         const response = await fetch(
-          "http://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/getData.php",
+          "https://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/getData.php",
           {
             mode: "cors",
           }
@@ -59,7 +59,7 @@ const WelcomePage = () => {
     console.log("Selected Products hereeeeee:", selectedProducts);
 
     console.log(JSON.stringify({ selectedProducts }));
-    fetch("http://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/deleteProduct.php", {
+    fetch("https://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/deleteProduct.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const WelcomePage = () => {
           console.log("Mass Delete Response:", data);
 
           // Fetch updated product data after deletion
-          fetch("http://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/getData.php", {
+          fetch("https://ec2-51-21-2-83.eu-north-1.compute.amazonaws.com/ScandiwebBackend/getData.php", {
             mode: "cors",
           })
             .then(handleResponse)
